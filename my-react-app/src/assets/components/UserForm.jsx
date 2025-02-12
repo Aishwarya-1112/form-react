@@ -2,11 +2,12 @@ import { useState } from "react";
 
 function UserForm() {
   const [name, setName] = useState("");
+  const [lname, setLame] = useState("");
+  const [ph, setPh] = useState("");
+  const [email, setEmail] = useState("");
+
   const handleChange = (event) => {
-    setName(event.target.value);
-  };
-  const handleSubmit = (event) => {
-    alert(`Submitted Name : ${name}`);
+    setLame(event.target.value);
   };
 
   return (
@@ -23,7 +24,7 @@ function UserForm() {
         Lastame :
         <input
           type="text"
-          value={name}
+          value={lname}
           onChange={handleChange}
         />
       </label>
@@ -31,7 +32,7 @@ function UserForm() {
         Email id :
         <input
           type="text"
-          value={name}
+          value={email}
           onChange={handleChange}
         />
       </label>
@@ -39,7 +40,7 @@ function UserForm() {
         phone no :
         <input
           type="text"
-          value={name}
+          value={ph}
           onChange={handleChange}
         />
       </label>
